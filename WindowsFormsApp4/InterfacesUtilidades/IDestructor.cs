@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 namespace MacMapkerson.InterfacesUtilidades{
-    public interface IDestructor : InterfacesComponentes.IComponente
+    public interface IDestructor : InterfacesComponentes.IComponente, InterfacesUtilidades.IUtilidadesComponentes
     {
         double Pf { get; set; }
        

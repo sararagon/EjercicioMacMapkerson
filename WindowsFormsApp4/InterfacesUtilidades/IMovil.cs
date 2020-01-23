@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MacMapkerson.InterfacesUtilidades
 {
-    public interface IMovil : InterfacesComponentes.IComponente
+    public interface IMovil : InterfacesComponentes.IComponente, InterfacesUtilidades.IUtilidadesComponentes
     {
         double Cm { get; set; }
     }

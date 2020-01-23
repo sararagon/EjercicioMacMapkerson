@@ -18,6 +18,7 @@ namespace MacMapkerson.UtilidadesEjercito
         
         void Añadir(InterfacesComponentes.IComponente componente);
         void Quitar(InterfacesComponentes.IComponente componente);
+        void Quitar();
 
 
     }

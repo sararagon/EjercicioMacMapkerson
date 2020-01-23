@@ -7,7 +7,7 @@ using MacMapkerson.InterfacesComponentes;
 
 namespace MacMapkerson.UtilidadesEjercito
 {
-    class Ejercito : UtilidadesEjercito.IEjercito
+   public class Ejercito : UtilidadesEjercito.IEjercito
     {
         public int NumElementos { get; set; }
         public List<IComponente> Componentes { get; set; }
@@ -17,17 +17,34 @@ namespace MacMapkerson.UtilidadesEjercito
         public double CM { get; set; }
         public int Precio { get; set; }
 
+        public Ejercito()
+        {
+            this.Componentes = null;
+            this.NumElementos = 0;
+            this.Pf = 0;
+            this.Bl = 0;
+            this.Cm = 0;
+            this.CM = 0;
+            this.Precio = 0;
+        }
+
         public void Añadir(InterfacesComponentes.IComponente componente)
         {
             Componentes.Add(componente);
             NumElementos++;
-            Algoritmos.IAlgoritmo Cuenta;
             UtilidadesEjercito.Algoritmos.CalculoDatos.CalcularDatos(this);
             UtilidadesEjercito.Algoritmos.CalculoCM.CalcularCM(this);
 
         }
 
+        public void Quitar()
+        {
+            Componentes.RemoveRange(this.NumElementos,this.NumElementos);
+            NumElementos--;
+            UtilidadesEjercito.Algoritmos.CalculoDatos.CalcularDatos(this);
+            UtilidadesEjercito.Algoritmos.CalculoCM.CalcularCM(this);
 
+        }
  
 
         public void Quitar(InterfacesComponentes.IComponente componente)

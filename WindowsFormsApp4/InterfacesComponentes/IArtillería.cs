@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MacMapkerson.InterfacesComponentes
 {
-    public interface IArtillería : InterfacesComponentes.IComponente
+    public interface IArtillería : InterfacesComponentes.IComponente, InterfacesComponentes.ITipoComponente
     {
     }
 }

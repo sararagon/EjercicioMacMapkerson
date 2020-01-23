@@ -64,31 +64,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factorias\ComponenteFactory.cs" />
-    <Compile Include="ComponentesArtilleria\Cañon.cs" />
-    <Compile Include="ComponentesArtilleria\CañonAntiaereo.cs" />
-    <Compile Include="ComponentesArtilleria\TorpederoMovil.cs" />
-    <Compile Include="ComponentesCaballeria\TanqueAtaque.cs" />
-    <Compile Include="ComponentesCaballeria\Transporte.cs" />
-    <Compile Include="ComponentesCaballeria\TransporteRapido.cs" />
-    <Compile Include="ComponentesInfanteria\Ametrallador.cs" />
-    <Compile Include="ComponentesInfanteria\InfanteríaBásica.cs" />
-    <Compile Include="ComponentesInfanteria\Sanitario.cs" />
+    <Compile Include="Builder\Componente.cs" />
+    <Compile Include="Builder\ComponenteBuilder.cs" />
+    <Compile Include="Builder\ComponenteDirector.cs" />
+    <Compile Include="Builder\ComponentesArtilleria\CañonBuilder.cs" />
+    <Compile Include="Builder\ComponentesArtilleria\CañonAntiaereoBuilder.cs" />
+    <Compile Include="Builder\ComponentesArtilleria\TorpederoMovilBuilder.cs" />
+    <Compile Include="Builder\ComponentesCaballeria\TanqueAtaqueBuilder.cs" />
+    <Compile Include="Builder\ComponentesCaballeria\TransporteBuilder.cs" />
+    <Compile Include="Builder\ComponentesCaballeria\TransporteRapidoBuilder.cs" />
+    <Compile Include="Builder\ComponentesInfanteria\AmetralladorBuilder.cs" />
+    <Compile Include="Builder\ComponentesInfanteria\InfanteríaBásicaBuilder.cs" />
+    <Compile Include="Builder\ComponentesInfanteria\SanitarioBuilder.cs" />
     <Compile Include="Factorias\EjercitoFactory.cs" />
     <Compile Include="InterfacesComponentes\IArtillería.cs" />
+    <Compile Include="InterfacesComponentes\ITipoComponente.cs" />
     <Compile Include="InterfacesUtilidades\IBlindado.cs" />
     <Compile Include="InterfacesComponentes\ICaballería.cs" />
     <Compile Include="InterfacesComponentes\IComponente.cs" />
     <Compile Include="InterfacesUtilidades\IDestructor.cs" />
     <Compile Include="InterfacesComponentes\IInfanteria.cs" />
     <Compile Include="InterfacesUtilidades\IMovil.cs" />
+    <Compile Include="InterfacesUtilidades\IUtilidadesComponentes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UtilidadesEjercito\Algoritmos\CalculoCM.cs" />
     <Compile Include="UtilidadesEjercito\Algoritmos\CalculoDatos.cs" />
-    <Compile Include="UtilidadesEjercito\Algoritmos\IAlgoritmo.cs" />
-    <Compile Include="UtilidadesEjercito\Algoritmos\ICalculoDatos.cs" />
-    <Compile Include="UtilidadesEjercito\Algoritmos\ICalculoCM.cs" />
     <Compile Include="UtilidadesEjercito\Ejercito.cs" />
     <Compile Include="UtilidadesEjercito\IEjercito.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -130,5 +131,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MacMapkerson.UtilidadesEjercito.Algoritmos
+namespace MacMapkerson.InterfacesUtilidades
 {
-    interface ICalculoDatos
+    public interface IUtilidadesComponentes
     {
     }
 }

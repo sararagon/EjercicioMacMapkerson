@@ -7,5 +7,12 @@ namespace MacMapkerson.Factorias
 {
     public class EjercitoFactory
     {
+        public static UtilidadesEjercito.Ejercito CrearEjercito()
+        {
+            return new UtilidadesEjercito.Ejercito();
+        }
+
+        
+        
     }
 }

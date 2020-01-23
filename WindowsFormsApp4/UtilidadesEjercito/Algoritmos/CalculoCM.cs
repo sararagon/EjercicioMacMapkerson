@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MacMapkerson.UtilidadesEjercito.Algoritmos
 {
-    class CalculoCM : UtilidadesEjercito.Algoritmos.ICalculoCM
+    class CalculoCM 
     {
-        public void CalcularCM(UtilidadesEjercito.IEjercito ejercito)
+        public static void CalcularCM(UtilidadesEjercito.IEjercito ejercito)
         {
             if (ejercito.Pf == 0)
             {

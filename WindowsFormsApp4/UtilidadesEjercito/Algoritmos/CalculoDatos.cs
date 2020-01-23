@@ -7,9 +7,9 @@ using MacMapkerson.InterfacesComponentes;
 
 namespace MacMapkerson.UtilidadesEjercito.Algoritmos
 {
-    class CalculoDatos : UtilidadesEjercito.Algoritmos.ICalculoDatos
+    class CalculoDatos 
     {
-        public void CalcularDatos(UtilidadesEjercito.IEjercito ejercito)
+        public static void CalcularDatos(UtilidadesEjercito.IEjercito ejercito)
         {
           
             foreach ( var componente in ejercito.Componentes)
@@ -26,6 +26,7 @@ namespace MacMapkerson.UtilidadesEjercito.Algoritmos
                 {
                     ejercito.Cm += (componente as InterfacesUtilidades.IMovil).Cm;
                 }
+                ejercito.Precio += componente.Precio;
             }
            
         }
